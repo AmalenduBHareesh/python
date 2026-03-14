@@ -55,19 +55,16 @@
     
 
 # disarium
-# n=int(input())
-# dummy=n
-# summ=0
-# l=len(str(n))
-# while dummy>0:
-#     rem=dummy%10
-#     dummy=dummy//10
-#     summ+=rem**l
-#     l-=1
-# if summ==n:
-#     print('dis')
-# else:
-#     print('not dis')        
-
-
-
+n=int(input())
+dummy=n
+summ=0
+l=len(str(n))
+while dummy>0:
+    rem=dummy%10
+    dummy=dummy//10
+    summ+=rem**l
+    l-=1
+if summ==n:
+    print('dis')
+else:
+    print('not')        

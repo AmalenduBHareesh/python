@@ -126,10 +126,61 @@
 # rio=FiboIterator(20,22,10)
 
 # for value in rio:
-#     print(value)        
+#     print(value)    
+# 
+# 
+
+class FiboIterator():
+    def __init__(self,fv,sv,n):
+        self.fv=fv
+        self.sv=sv
+        self.n=n
+    def __iter__(self):
+        self.i=1
+        return self
+    def __next__(self):
+        if self.i<self.n:
+            self.i+=1
+            res=self.sv
+            self.fv,self,sv=self.sv,self.fv+self.sv
+            return res
+        raise StopIteration    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
+#remove duplicates
+
+
+# s=input()
+# res=''
+# for i in s:
+#     if i not in res:
+#         res+=i
+# print(res)        
 
 
 
@@ -139,4 +190,13 @@
 
 
 
+
+
+#fact
+
+# n=int(input())
+# f=1
+# for i in range(1,n+1):
+#     f*=i
+# print(f)    
 
