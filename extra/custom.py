@@ -130,21 +130,49 @@
 # 
 # 
 
-class FiboIterator():
-    def __init__(self,fv,sv,n):
-        self.fv=fv
-        self.sv=sv
-        self.n=n
-    def __iter__(self):
-        self.i=1
-        return self
-    def __next__(self):
-        if self.i<self.n:
-            self.i+=1
-            res=self.sv
-            self.fv,self,sv=self.sv,self.fv+self.sv
-            return res
-        raise StopIteration    
+# class FiboIterator():
+#     def __init__(self,fv,sv,n):
+#         self.fv=fv
+#         self.sv=sv
+#         self.n=n
+#     def __iter__(self):
+#         self.i=1
+#         return self
+#     def __next__(self):
+#         if self.i<self.n:
+#             self.i+=1
+#             res=self.sv
+#             self.fv,self,sv=self.sv,self.fv+self.sv
+#             return res
+#         raise StopIteration    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
